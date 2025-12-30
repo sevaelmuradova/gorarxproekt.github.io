@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="header_inner">
+            <div class="logo">
+                <a href="">GORARXPROEKT</a>
+            </div>
+           
+            <div class="header_right" id="menu">
+                <div onclick="menuToggle()" class="menu_close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#home" data-key="nav_home">home</a>
+                            <a href="#about" data-key="nav_about">about</a>
+                            <a href="#projects" data-key="nav_projects">projects</a>
+                            <a href="#contact" data-key="nav_contact">contact us</a>
+                        </li>
+                    </ul>
+                </nav>
+               
+            </div>
+            <div class="header_controls">
+                <select class="lang" name="" id="">
+                    <option value="en">EN</option>
+                    <option value="uz">UZ</option>
+                    <option value="ru" selected>RU</option>
+                </select>
+                <div class="menu_img" onclick="menuToggle()">
+                 <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+   <main>
+    <section id="home" class="home">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQLvLx5sstlsutTAmRIM6ogiCTt35g7J3RpQ&s" alt="">
+        <div class="home_content">
+            <h1 data-key="home_title">A private architecture studio focused on residential and commercial design.</h1>
+            <p data-key="home_desc">Founded in Tashkent, the studio works on residential and commercial projects with a focus on context, function, and clarity.</p>
+            <div class="home_btn">
+                <button>
+                    <a href="#projects" data-key="view_projects">View all projects</a>
+                </button>
+            </div>
+        </div>
+        
+    </section>
+    <section id="about" class="about">
+        <h2 data-key="our_team"></h2>
+        <div class="about_content">
+            <div class="about_card">
+                <div class="about_img">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/002/318/271/small/user-profile-icon-free-vector.jpg" alt="">
+                </div>
+            <div class="about_details">
+                <div class="name">
+                    <p>Iroda Kulieva</p>
+                </div>
+                <div class="role">
+                    <p data-key="founder_architect"></p>
+                </div>
+                
+            </div>
+            </div>
+            <div class="about_card">
+                <div class="about_img">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/002/318/271/small/user-profile-icon-free-vector.jpg" alt="">
+                </div>
+            <div class="about_details">
+                <div class="name">
+                    <p>Farxod</p>
+                </div>
+                <div class="role">
+                    <p data-key="architect_designer"></p>
+                </div>
+                
+            </div>
+            </div>
+            <div class="about_card">
+                <div class="about_img">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/002/318/271/small/user-profile-icon-free-vector.jpg" alt="">
+                </div>
+            <div class="about_details">
+                <div class="name">
+                    <p>Iroda Kulieva</p>
+                </div>
+                <div class="role">
+                    <p data-key="architect_designer"></p>
+                </div>
+               
+            </div>
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <div class="title">
+            <h1 data-key="projects_title"></h1>
+        </div>
+        <div class="projects">
+            <div class="project">
+                <div class="project_img">
+                    <img src="./img1.jpg" alt="">
+                </div>
+                <div class="project_content">
+                    <div class="project_title">
+                        <p>Name Fabric</p>
+                    </div>
+                        <a href="./view.html" class="project_btn" data-key="view_btn"></a>
+                </div>
+               
+            </div>
+            <div class="project">
+                <div class="project_img">
+                    <img src="./img4.jpg" alt="">
+                </div>
+                <div class="project_content">
+                    <div class="project_title">
+                        <p>Liya Textile</p>
+                    </div>
+                    <a href="./view1.html" class="project_btn" data-key="view_btn"></a>
+                </div>
+               
+            </div>
+            <div class="project">
+                <div class="project_img">
+                    <img src="./img8.jpg" alt="">
+                </div>
+                <div class="project_content">
+                    <div class="project_title">
+                        <p>School N13</p>
+                    </div>
+                    <a href="./view.html" class="project_btn" data-key="view_btn"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="contact_content">
+            <div class="contact_details">
+                <div class="email">
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <p>gorarxproekt@gmail.com</p>
+                </div>
+                <div class="phone">
+                    <div>
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                   
+                    <p>+998914460045,</p>
+                    <p>+998936898930</p>
+                </div>
+                <div class="address">
+                    <div>
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <p data-key="address_text"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+   </main>
+   <script src="./main.js"></script>
+   <script src="./lang.js"></script>
+</body>
+</html>
