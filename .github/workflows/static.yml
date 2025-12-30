@@ -35,7 +35,8 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Prepare site files
         run: |
-          cp -r index.html css imgs view.html view1.html view2.html web.js .
+          cp index.html view.html view1.html view2.html web.js ./
+          cp -r css imgs ./
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
