@@ -33,6 +33,10 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      - name: Prepare site files
+        run: |
+          cp -r index.html css imgs view.html view1.html view2.html web.js .
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
